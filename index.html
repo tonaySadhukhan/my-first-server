@@ -18,6 +18,8 @@
 
         // Display incoming messages from the server
         socket.on("message", (message) => {
+            let a=document.getElementById('ab');
+            a.innerHTML+=`<h2>${message}</h2><br>`;
             console.log("Received message from server:", message);
         });
 
